@@ -1,7 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import Input from '../../Component/InputFolder/Input'
-const Login = () => {
+const Login = ({ navigation }) => {
+
     return (
         <View style={styles.Container}>
             <Text style={styles.Welcome}>Login to {"\n"} Happy reads</Text>
@@ -10,7 +11,8 @@ const Login = () => {
             <Input placeholder="Your Password" />
 
             <TouchableOpacity style={styles.btn}>
-                <Text style={styles.LoginText}>Login</Text>
+                <Text style={styles.LoginText}
+                    onPress={() => navigation.navigate('HomeScreen')} >Login</Text>
             </TouchableOpacity>
         </View>
     )

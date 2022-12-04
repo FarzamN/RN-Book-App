@@ -3,19 +3,16 @@ import { StyleSheet, Text, View } from 'react-native'
 import Login from "./Screens/Login/Login"
 import HomeScreen from "./Screens/HomeScreen/HomeScreen"
 
+import Navigation from './Screens/Navigation/Navigation'
+
+
+
 const App = () => {
+
   return (
-    <View style={styles.raw}>
-      <Login />
-      {/* <HomeScreen /> */}
-    </View>
+    <Navigation />
   )
 }
 
 export default App
 
-const styles = StyleSheet.create({
-  raw: {
-    backgroundColor: "#fef3e3",
-  }
-})

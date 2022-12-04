@@ -9,6 +9,7 @@ const Input = ({ placeholder }) => {
                 value={Text}
                 placeholder={placeholder}
                 label="Name"
+
             />
         </View>
     )
